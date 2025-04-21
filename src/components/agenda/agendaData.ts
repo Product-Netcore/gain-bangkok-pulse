@@ -8,16 +8,16 @@ export const agendaData: DayType[] = [
     events: [
       {
         time: "08:00 AM – 12:00 PM",
-        title: "Arrival at the Venue / Breakfast for early arrivals",
+        title: "Arrival at the Venue – Breakfast for early arrivals",
         description: "Rooms available after 3 PM"
       },
       {
         time: "01:00 PM – 03:00 PM",
-        title: "Lunch",
+        title: "🍽️ Power Lunch",
         description: ""
       },
       {
-        time: "03:00 PM – 03:55 PM",
+        time: "03:00 PM – 04:00 PM",
         title: "Check-in / Leisure",
         description: ""
       },
@@ -27,22 +27,22 @@ export const agendaData: DayType[] = [
         description: ""
       },
       {
-        time: "04:15 PM – 04:55 PM",
-        title: "Curtain Raiser",
-        description: "Kalpit Jain"
+        time: "04:10 PM – 04:20 PM",
+        title: "🚀 GAINing Momentum: Welcome Address",
+        description: "Amit & Abithab"
       },
       {
-        time: "05:00 PM – 05:25 PM",
-        title: "Keynote Address",
+        time: "04:25 PM – 04:55 PM",
+        title: "🌟 Visionary GAIN: Keynote Address",
         description: "Rajesh Jain"
       },
       {
-        time: "05:30 PM – 07:30 PM",
-        title: "Event Kickoff & Team Building Activity",
-        description: "Driven by external team"
+        time: "05:00 PM – 07:00 PM",
+        title: "Event Kickoff with Team Building Activity",
+        description: "External Team will drive the next few hours"
       },
       {
-        time: "07:30 PM Onwards",
+        time: "07:00 PM Onwards",
         title: "Dinner & Leisure",
         description: ""
       }
@@ -54,108 +54,98 @@ export const agendaData: DayType[] = [
     date: "April 25, 2025",
     events: [
       {
-        time: "07:30 AM – 08:55 AM",
+        time: "07:30 AM – 09:20 AM",
         title: "Breakfast",
         description: ""
       },
       {
         time: "09:00 AM – 09:10 AM",
-        title: "Welcome to GAIN Mode",
-        description: "Abithab Bhaskar & Amit Ahuja"
+        title: "🚀 Booting Up: Welcome to GAIN Mode",
+        description: ""
       },
       {
         time: "09:15 AM – 09:25 AM",
-        title: "AI-Spirational Kickoff",
+        title: "🎬 Fueling the Mind: AI-Spirational Kickoff",
         description: ""
       },
       {
-        time: "09:30 AM – 10:10 AM",
-        title: "GAIN",
-        description: "Kalpit Jain"
+        time: "09:30 AM – 09:55 AM",
+        title: "📈 Past. Present. GAIN – A CEO's Viewpoint",
+        description: "KJ"
       },
       {
-        time: "10:15 AM – 10:40 AM",
-        title: "Transforming International Business",
-        description: "Abithab Bhaskar"
+        time: "10:00 AM – 10:25 AM",
+        title: "🚀 Activating GAIN Mode: Vision 2025",
+        description: "Abithab"
       },
       {
-        time: "10:45 AM – 11:10 AM",
-        title: "Growth, Grit & Gameplan: India",
-        description: "Amit Ahuja"
+        time: "10:30 AM – 10:55 AM",
+        title: "💰 Scaling Smart: Revenue in the Age of AI",
+        description: "Amit"
       },
       {
-        time: "11:15 AM – 11:25 AM",
-        title: "Coffee & Chatter Break",
+        time: "11:00 AM – 11:10 AM",
+        title: "☕ GAIN a Sip: Tea & Chatter Break",
         description: ""
       },
       {
-        time: "11:30 AM – 11:55 AM",
-        title: "Guest Speaker",
-        description: "Randi Chiah"
+        time: "11:15 AM – 11:40 AM",
+        title: "🔥 Recharge. Rethink. Rise",
+        description: "Diana"
       },
       {
-        time: "12:00 PM – 12:35 PM",
-        title: "Impact Player Session – Part 1",
+        time: "11:45 AM – 12:25 PM",
+        title: "🦸‍♂️ Sales Avengers: Powering the Pipeline",
         description: ""
       },
       {
-        time: "12:40 PM – 01:00 PM",
-        title: "Inbox Unplugged with the Email Chief",
-        description: "Balajee S"
+        time: "12:30 PM – 12:55 PM",
+        title: "🎉 AI or Nay? The GAIN Game Begins",
+        description: "Girish & Balajee"
       },
       {
-        time: "01:05 PM – 01:55 PM",
-        title: "System Cooldown – Refuel & Refresh",
+        time: "01:00 PM – 01:55 PM",
+        title: "🍽️ System Cooldown: Refuel & Refresh",
         description: ""
       },
       {
         time: "02:00 PM – 02:40 PM",
-        title: "Impact Player Session – Part 2",
+        title: "🦸‍♂️ Sales Avengers: Powering the Pipeline",
         description: ""
       },
       {
         time: "02:45 PM – 03:10 PM",
-        title: "Guest Speaker",
+        title: "💡 GAIN Starts with You",
         description: "Mr. Jaimit Doshi"
       },
       {
-        time: "03:15 PM – 03:35 PM",
-        title: "Comm Stack Crackdown",
-        description: "Girish Chaturvedi"
+        time: "03:15 PM – 03:40 PM",
+        title: "🔬 Product Deep Dive – GAIN Tech Stack",
+        description: "Kedar & Saurabh"
       },
       {
-        time: "03:40 PM – 04:00 PM",
-        title: "Mission: Growth Possible",
-        description: "Avadhoot Revankar"
-      },
-      {
-        time: "04:00 PM – 04:10 PM",
-        title: "Coffee & Chatter Break",
+        time: "03:45 PM – 03:55 PM",
+        title: "☕ GAIN a Sip: Tea & Chatter Break",
         description: ""
       },
       {
-        time: "04:15 PM – 04:40 PM",
-        title: "Product Deep Dive",
-        description: "Kedar Parikh & Saurabh Tuteja"
+        time: "04:00 PM – 04:25 PM",
+        title: "⚡ Firestorm",
+        description: "Praveen & AV"
       },
       {
-        time: "04:45 PM – 05:05 PM",
-        title: "Delivering Experience & Advocacy",
-        description: "Praveen Sridhar"
+        time: "04:30 PM – 04:55 PM",
+        title: "🎤 Mastering the Shift: From Growth to GAIN",
+        description: "Sid"
       },
       {
-        time: "05:10 PM – 05:35 PM",
-        title: "Consultative Sales",
-        description: "Siddharth Gopalkrishnan"
-      },
-      {
-        time: "05:40 PM – 05:50 PM",
-        title: "Reflection of the Day",
-        description: "Amit Ahuja & Abithab Bhaskar"
+        time: "05:00 PM – 05:15 PM",
+        title: "🎤 System Shutdown: Sync, Reflect & GAIN More",
+        description: "Amit / AB"
       },
       {
         time: "07:45 PM – 11:00 PM",
-        title: "GAINing Glory: Awards Night & Gala Dinner",
+        title: "🏆 GAINing Glory: Awards Night & Gala Dinner",
         description: ""
       }
     ]
