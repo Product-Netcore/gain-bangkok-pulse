@@ -36,14 +36,7 @@ const TravelChecklistSection = () => {
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Emergency Contact List",
-      description: (
-        <span>
-          Save these numbers:{" "}
-          <a href="tel:9821186031" className="text-netcore-blue hover:underline">Manisha Thakore (9821186031)</a>,{" "}
-          <a href="tel:9892044378" className="text-netcore-blue hover:underline">Imran Mansuri (9892044378)</a>,{" "}
-          <a href="tel:9870545052" className="text-netcore-blue hover:underline">Devendra Thakur (9870545052)</a>
-        </span>
-      )
+      description: "Save these numbers: Manisha Thakore (9821186031), Imran Mansuri (9892044378), Devendra Thakur (9870545052)"
     },
     {
       icon: <FileText className="w-6 h-6" />,
