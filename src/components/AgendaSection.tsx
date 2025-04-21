@@ -1,9 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { agendaData } from './agenda/agendaData';
 import { Calendar, Clock, Users, Coffee, Utensils, Award } from 'lucide-react';
 
 const AgendaSection = () => {
   const [activeDay, setActiveDay] = useState('day1');
+
+  useEffect(() => {
+    const today = new Date();
+    const eventStartDate = new Date('2025-04-24');
+    const day2Date = new Date('2025-04-25');
+    const day3Date = new Date('2025-04-26');
+
+    // If today is before the event, show Day 1
+    if (today < eventStartDate) {
+      setActiveDay('day1');
+    }
+    // If today is Day 2
+    else if (today >= day2Date && today < day3Date) {
+      setActiveDay('day2');
+    }
+    // If today is Day 3 or after
+    else if (today >= day3Date) {
+      setActiveDay('day3');
+    }
+    // If today is Day 1
+    else {
+      setActiveDay('day1');
+    }
+  }, []);
 
   const getEventIcon = (title: string) => {
     if (title.toLowerCase().includes('breakfast') || title.toLowerCase().includes('lunch') || title.toLowerCase().includes('dinner')) {
