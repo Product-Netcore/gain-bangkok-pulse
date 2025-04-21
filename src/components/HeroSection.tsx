@@ -32,12 +32,12 @@ const HeroSection = () => {
       />
       {/* Dramatic Large GAIN logo as subtle background, but sharper for visual pop */}
       <img
-        src="/lovable-uploads/1d53dffe-e733-4b42-933f-8b53d313245e.png"
+        src="/lovable-uploads/24ad330a-25fb-4e27-93bc-fbe3e8e58501.png"
         alt=""
         className="absolute left-1/2 top-0 z-0 opacity-40 blur-[1.5px] select-none pointer-events-none -translate-x-1/2 scale-125 w-[85vw] max-w-[1200px] min-w-[500px]"
         style={{
           filter:
-            'drop-shadow(0 0 90px #4D1AFF77) drop-shadow(0 0 30px #0FA0CE66)',
+            'drop-shadow(0 0 90px #F7941D77) drop-shadow(0 0 30px #FF719A66)',
         }}
         draggable={false}
         aria-hidden
@@ -53,11 +53,11 @@ const HeroSection = () => {
             }}
           >
             <img
-              src="/lovable-uploads/1d53dffe-e733-4b42-933f-8b53d313245e.png"
+              src="/lovable-uploads/24ad330a-25fb-4e27-93bc-fbe3e8e58501.png"
               alt="GAIN 2025 Event Image"
               className="w-[520px] max-w-[94vw] h-auto drop-shadow-md"
               style={{
-                filter: 'drop-shadow(0 0 44px #F9731655) drop-shadow(0 0 10px #0FA0CE44)'
+                filter: 'drop-shadow(0 0 44px #F9731655) drop-shadow(0 0 10px #FF719A44)'
               }}
             />
           </div>
@@ -88,4 +88,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-

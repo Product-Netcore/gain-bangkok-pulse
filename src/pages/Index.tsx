@@ -32,7 +32,7 @@ const Index = () => {
       />
       {/* GAIN BG Image */}
       <img
-        src="/lovable-uploads/1d53dffe-e733-4b42-933f-8b53d313245e.png"
+        src="/lovable-uploads/24ad330a-25fb-4e27-93bc-fbe3e8e58501.png"
         alt=""
         className="fixed top-[-7vw] left-1/2 z-0 pointer-events-none max-w-none opacity-10 blur-0 scale-[1.6] -translate-x-1/2 select-none"
         style={{
@@ -61,4 +61,3 @@ const Index = () => {
 };
 
 export default Index;
-

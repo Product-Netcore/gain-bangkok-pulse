@@ -8,6 +8,9 @@ export type AgendaEventType = {
 };
 
 const AgendaEvent = ({ event, index }: { event: AgendaEventType; index: number }) => {
+  // Determine if this is a special event (contains emoji)
+  const isSpecialEvent = event.title.match(/[^\u0000-\u007F]/); // Check for non-ASCII characters (emojis)
+  
   return (
     <div
       className="p-6 animate-on-scroll"
@@ -18,7 +21,7 @@ const AgendaEvent = ({ event, index }: { event: AgendaEventType; index: number }
           {event.time}
         </div>
         <div className="md:w-2/3">
-          <h4 className="text-lg font-semibold text-netcore-blue mb-1">
+          <h4 className={`text-lg font-semibold mb-1 ${isSpecialEvent ? 'text-netcore-pink' : 'text-netcore-blue'}`}>
             {event.title}
           </h4>
           {event.description && (

@@ -38,16 +38,19 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            {/* Netcore Logo */}
+            {/* GAIN Logo */}
             <div className="h-10 mr-2 flex items-center">
               <img
-                src="/lovable-uploads/1d53dffe-e733-4b42-933f-8b53d313245e.png"
-                alt="Netcore Logo"
-                className="h-10 w-10 object-contain"
-                style={{ maxWidth: 40, maxHeight: 40 }}
+                src="/lovable-uploads/24ad330a-25fb-4e27-93bc-fbe3e8e58501.png"
+                alt="GAIN Logo"
+                className="h-10 w-auto object-contain"
+                style={{ 
+                  maxHeight: 40,
+                  filter: scrolled ? 'none' : 'drop-shadow(0 0 10px rgba(255, 113, 154, 0.7))'
+                }}
               />
               <div className="text-netcore-blue font-bold text-xl ml-2">
-                <span className="text-netcore-blue">NETCORE</span>
+                <span className={scrolled ? "text-netcore-blue" : "text-white"}>NETCORE</span>
               </div>
             </div>
           </div>
