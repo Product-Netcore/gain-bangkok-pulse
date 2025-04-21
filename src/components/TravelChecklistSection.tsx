@@ -1,8 +1,23 @@
 import React from 'react';
-import { User, Plug, Sun, Plane, Phone, FileText, Bus } from 'lucide-react';
+import { User, Plug, Sun, Plane, Phone, FileText, Bus, Wallet, Signal, ThermometerSun } from 'lucide-react';
 
 const TravelChecklistSection = () => {
   const checklistItems = [
+    {
+      icon: <Wallet className="w-6 h-6" />,
+      title: "Currency Exchange",
+      description: "Carry Thai Baht (THB). Exchange at your home airport or Bangkok airport. Max $3,000 allowed without customs declaration."
+    },
+    {
+      icon: <Signal className="w-6 h-6" />,
+      title: "Mobile Connectivity",
+      description: "Activate international roaming. Prepaid? Recharge a roaming pack. Postpaid? Confirm your plan covers international use. Note: Roaming packs will not be reimbursed."
+    },
+    {
+      icon: <ThermometerSun className="w-6 h-6" />,
+      title: "Weather Advisory",
+      description: "Bangkok in April = very hot and humid (35–40°C+). Pack: light, breathable clothes, sunscreen, sunglasses, and stay hydrated."
+    },
     {
       icon: <User className="w-6 h-6" />,
       title: "Identity",
@@ -12,11 +27,6 @@ const TravelChecklistSection = () => {
       icon: <Plug className="w-6 h-6" />,
       title: "Travel Adapter",
       description: "Thailand uses plug types A, B, C, F, and O — carry an adapter"
-    },
-    {
-      icon: <Sun className="w-6 h-6" />,
-      title: "Weather",
-      description: "Bangkok is hot & humid—pack light, breathable clothing"
     },
     {
       icon: <Plane className="w-6 h-6" />,

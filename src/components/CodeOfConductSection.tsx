@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle2, AlertCircle, Info, Phone, Mail } from 'lucide-react';
+import { CheckCircle2, AlertCircle, Info, Phone } from 'lucide-react';
 
 const CodeOfConductSection = () => {
   return (
@@ -60,47 +60,6 @@ const CodeOfConductSection = () => {
                   <p className="text-gray-300 text-sm">{item.description}</p>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Travel Checklist */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
-          {[
-            {
-              title: "Currency Exchange",
-              items: [
-                "Carry Thai Baht (THB). Exchange at your home airport or Bangkok airport.",
-                "Max $3,000 allowed without customs declaration."
-              ]
-            },
-            {
-              title: "Mobile Connectivity",
-              items: [
-                "Activate international roaming.",
-                "Prepaid? Recharge a roaming pack.",
-                "Postpaid? Confirm your plan covers international use.",
-                "Note: Roaming packs will not be reimbursed."
-              ]
-            },
-            {
-              title: "Weather Advisory",
-              items: [
-                "Bangkok in April = very hot and humid (35–40°C+).",
-                "Pack: light, breathable clothes, sunscreen, sunglasses, and stay hydrated."
-              ]
-            }
-          ].map((item, index) => (
-            <div key={index} className="bg-white/5 backdrop-blur-sm rounded-xl p-4">
-              <h4 className="text-lg font-semibold text-white mb-3">{item.title}</h4>
-              <ul className="space-y-2">
-                {item.items.map((point, i) => (
-                  <li key={i} className="text-gray-300 text-sm flex items-start">
-                    <span className="mr-2">•</span>
-                    {point}
-                  </li>
-                ))}
-              </ul>
             </div>
           ))}
         </div>
