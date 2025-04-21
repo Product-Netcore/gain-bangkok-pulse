@@ -1,13 +1,13 @@
-
 import { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
-import AgendaSection from '@/components/AgendaSection';
 import BangkokGuideSection from '@/components/BangkokGuideSection';
+import TopAttractionsSection from '@/components/TopAttractionsSection';
+import AgendaSection from '@/components/AgendaSection';
 import TravelChecklistSection from '@/components/TravelChecklistSection';
 import CodeOfConductSection from '@/components/CodeOfConductSection';
-import AcknowledgmentSection from '@/components/AcknowledgmentSection';
 import Footer from '@/components/Footer';
+import StickyNav from '@/components/StickyNav';
 import { setupAnimationObserver } from '@/utils/animationObserver';
 
 const Index = () => {
@@ -27,35 +27,39 @@ const Index = () => {
         className="fixed inset-0 z-0 pointer-events-none animate-background-glow"
         style={{
           background:
-            'radial-gradient(circle at 60% 32%, rgba(254,113,154,0.16) 0%, rgba(20,63,147,0.60) 80%, #1A1F2C 100%)',
+            'radial-gradient(circle at 60% 32%, rgba(254,113,154,0.05) 0%, rgba(20,63,147,0.25) 80%, rgba(26,31,44,0.95) 100%)',
         }}
       />
-      {/* GAIN BG Image */}
-      <img
-        src="/lovable-uploads/24ad330a-25fb-4e27-93bc-fbe3e8e58501.png"
-        alt=""
-        className="fixed top-[-7vw] left-1/2 z-0 pointer-events-none max-w-none opacity-10 blur-0 scale-[1.6] -translate-x-1/2 select-none"
-        style={{
-          width: '120vw',
-          minWidth: 1200,
-          maxWidth: 1800,
-          filter:
-            'blur(2px) drop-shadow(0 0 160px #FF719A88) brightness(1.08) saturate(1.1)',
-        }}
-        draggable={false}
-        aria-hidden
-      />
+      {/* Bangkok Background Image */}
+      <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+        <img
+          src="/bangkok-temple-sunset.png"
+          alt=""
+          className="w-full h-full object-cover opacity-20"
+          style={{
+            filter: 'blur(3px) brightness(0.35) saturate(1.2)',
+          }}
+          draggable={false}
+          aria-hidden
+        />
+        {/* Additional overlay for better text contrast */}
+        <div 
+          className="absolute inset-0 bg-gradient-to-b from-[#181426]/40 via-transparent to-[#181426]/60"
+          aria-hidden
+        />
+      </div>
       {/* Main Page Content */}
-      <div className="relative z-10">
+      <div className="relative z-10 space-y-6">
         <Navbar />
         <HeroSection />
         <AgendaSection />
         <BangkokGuideSection />
+        <TopAttractionsSection />
         <TravelChecklistSection />
         <CodeOfConductSection />
-        <AcknowledgmentSection />
         <Footer />
       </div>
+      <StickyNav />
     </div>
   );
 };

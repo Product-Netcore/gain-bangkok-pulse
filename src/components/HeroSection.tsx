@@ -1,4 +1,3 @@
-
 import React from 'react';
 import CountdownTimer from './CountdownTimer';
 import { Button } from '@/components/ui/button';
@@ -17,35 +16,25 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center"
-      style={{
-        background: 'transparent'
-      }}
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Subtle, glowing shadow accent */}
-      <div
-        className="absolute inset-0 z-0 pointer-events-none"
-        style={{
-          background:
-            'radial-gradient(ellipse at 60% 40%, rgba(234,172,232,0.12) 0%, rgba(20,63,147,0.21) 52%, transparent 100%)'
+      {/* Background image with overlay */}
+      <div 
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+        style={{ 
+          backgroundImage: 'url("/images/bangkok-temple-sunset.png")',
+          filter: 'brightness(0.7)'
         }}
       />
-      {/* Dramatic Large GAIN background logo with glow effect */}
-      <img
-        src="/lovable-uploads/24ad330a-25fb-4e27-93bc-fbe3e8e58501.png"
-        alt=""
-        className="absolute left-1/2 top-0 z-0 opacity-40 blur-[1.5px] select-none pointer-events-none -translate-x-1/2 scale-125 w-[85vw] max-w-[1200px] min-w-[500px]"
-        style={{
-          filter:
-            'drop-shadow(0 0 90px #F7941D77) drop-shadow(0 0 30px #FF719A66)',
-        }}
-        draggable={false}
-        aria-hidden
+      
+      {/* Gradient overlay */}
+      <div
+        className="absolute inset-0 z-1 bg-gradient-to-b from-black/60 to-black/80 pointer-events-none"
       />
 
       <div className="container mx-auto px-4 relative z-10 flex flex-col items-center">
         {/* Centered GAIN image with glow */}
-        <div className="mb-8 flex justify-center animate-fade-in" style={{ animationDelay: '0.05s' }}>
+        <div className="mt-24 mb-8 flex justify-center animate-fade-in" style={{ animationDelay: '0.05s' }}>
           <div
             className="rounded-2xl shadow-2xl overflow-hidden bg-white/0 p-1 border border-[#ff719a80]"
             style={{
@@ -62,10 +51,11 @@ const HeroSection = () => {
             />
           </div>
         </div>
-        {/* Removed all text overlays as requested */}
+        
         <div className="mb-10 animate-fade-in" style={{ animationDelay: '0.3s' }}>
           <CountdownTimer />
         </div>
+        
         <Button 
           onClick={() => scrollToSection('agenda')}
           size="lg"
