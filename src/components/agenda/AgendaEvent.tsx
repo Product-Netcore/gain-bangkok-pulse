@@ -4,7 +4,7 @@ import React from 'react';
 export type AgendaEventType = {
   time: string;
   title: string;
-  description: string;
+  description?: string; // Changed from required to optional
 };
 
 const AgendaEvent = ({ event, index }: { event: AgendaEventType; index: number }) => {
