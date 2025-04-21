@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a365d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2c5282;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background rectangle -->
+  <rect width="1200" height="630" fill="url(#gradient)" />
+  
+  <!-- Content -->
+  <g transform="translate(100, 100)">
+    <!-- Logo/Title -->
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white">
+      GAIN Bangkok
+    </text>
+    
+    <!-- Subtitle -->
+    <text x="0" y="100" font-family="Arial, sans-serif" font-size="36" fill="rgba(255,255,255,0.8)">
+      April 24-26, 2025
+    </text>
+    
+    <!-- Decorative elements -->
+    <circle cx="1000" cy="400" r="150" fill="rgba(255,255,255,0.1)" />
+    <circle cx="1100" cy="300" r="100" fill="rgba(255,255,255,0.1)" />
+    
+    <!-- Bottom text -->
+    <text x="0" y="500" font-family="Arial, sans-serif" font-size="24" fill="rgba(255,255,255,0.6)">
+      Netcore Sales Conference
+    </text>
+  </g>
+</svg> 
