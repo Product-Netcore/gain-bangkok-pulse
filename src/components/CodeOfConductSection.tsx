@@ -216,7 +216,12 @@ const CodeOfConductSection = () => {
                   <Phone className="w-5 h-5 text-netcore-blue" />
                   <div>
                     <p className="text-white font-medium">{contact.name}</p>
-                    <p className="text-gray-300">{contact.phone}</p>
+                    <a 
+                      href={`tel:${contact.phone}`}
+                      className="text-gray-300 hover:text-netcore-blue transition-colors"
+                    >
+                      {contact.phone}
+                    </a>
                   </div>
                 </div>
               </div>
