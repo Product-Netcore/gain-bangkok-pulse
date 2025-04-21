@@ -1,9 +1,8 @@
 import { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
-import BangkokGuideSection from '@/components/BangkokGuideSection';
-import TopAttractionsSection from '@/components/TopAttractionsSection';
 import AgendaSection from '@/components/AgendaSection';
+import TopAttractionsSection from '@/components/TopAttractionsSection';
 import TravelChecklistSection from '@/components/TravelChecklistSection';
 import CodeOfConductSection from '@/components/CodeOfConductSection';
 import Footer from '@/components/Footer';
@@ -51,12 +50,13 @@ const Index = () => {
       {/* Main Page Content */}
       <div className="relative z-10 space-y-6">
         <Navbar />
-        <HeroSection />
-        <AgendaSection />
-        <BangkokGuideSection />
-        <TopAttractionsSection />
-        <TravelChecklistSection />
-        <CodeOfConductSection />
+        <main>
+          <HeroSection />
+          <AgendaSection />
+          <TopAttractionsSection />
+          <TravelChecklistSection />
+          <CodeOfConductSection />
+        </main>
         <Footer />
       </div>
       <StickyNav />

@@ -1,34 +1,36 @@
-
 import React from 'react';
 
 export type AgendaEventType = {
   time: string;
   title: string;
-  description?: string; // Changed from required to optional
+  description: string;
 };
 
 const AgendaEvent = ({ event, index }: { event: AgendaEventType; index: number }) => {
-  // Determine if this is a special event (contains emoji)
-  const isSpecialEvent = event.title.match(/[^\u0000-\u007F]/); // Check for non-ASCII characters (emojis)
-  
   return (
-    <div
-      className="p-6 animate-on-scroll"
-      style={{ animationDelay: `${index * 0.07}s` }}
+    <div 
+      key={index} 
+      className="p-3 md:p-4 hover:bg-white/80 transition-colors duration-300"
     >
-      <div className="flex flex-col md:flex-row md:items-start">
-        <div className="md:w-1/3 font-medium text-gray-500 mb-2 md:mb-0">
-          {event.time}
+      <div className="flex flex-col space-y-1.5 md:space-y-0 md:flex-row md:items-start">
+        <div className="flex items-center space-x-2 w-full md:w-1/4">
+          <span className="font-medium text-gray-500 text-sm md:text-base">
+            {event.time}
+          </span>
         </div>
-        <div className="md:w-2/3">
-          <h4 className={`text-lg font-semibold mb-1 ${isSpecialEvent ? 'text-netcore-pink' : 'text-netcore-blue'}`}>
-            {event.title}
-          </h4>
-          {event.description && (
-            <p className="text-gray-600">
-              {event.description}
-            </p>
-          )}
+        <div className="w-full md:w-3/4">
+          <div className="flex items-start space-x-2">
+            <div>
+              <h4 className="text-base md:text-lg font-semibold mb-0.5 text-netcore-blue">
+                {event.title}
+              </h4>
+              {event.description && (
+                <p className="text-sm md:text-base text-gray-600">
+                  {event.description}
+                </p>
+              )}
+            </div>
+          </div>
         </div>
       </div>
     </div>

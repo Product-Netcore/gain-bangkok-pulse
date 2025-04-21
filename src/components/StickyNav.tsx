@@ -11,7 +11,7 @@ const StickyNav = () => {
       setIsVisible(window.scrollY > 300);
 
       // Update active section
-      const sections = ['hero', 'agenda', 'bangkok-guide', 'top-attractions', 'travel-checklist', 'code-of-conduct'];
+      const sections = ['hero', 'agenda', 'top-attractions', 'travel-checklist', 'code-of-conduct'];
       const currentSection = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -47,71 +47,57 @@ const StickyNav = () => {
   return (
     <>
       {/* Sticky Navigation */}
-      <nav className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50">
-        <div className="bg-white/10 backdrop-blur-sm rounded-full p-2 shadow-lg">
-          <div className="flex items-center space-x-2">
-            <button
-              onClick={() => scrollToSection('hero')}
-              className={`p-2 rounded-full transition-colors ${
-                activeSection === 'hero'
-                  ? 'bg-netcore-blue text-white'
-                  : 'text-gray-300 hover:bg-white/20'
-              }`}
-            >
-              <Home className="w-5 h-5" />
-            </button>
-            <button
-              onClick={() => scrollToSection('agenda')}
-              className={`p-2 rounded-full transition-colors ${
-                activeSection === 'agenda'
-                  ? 'bg-netcore-blue text-white'
-                  : 'text-gray-300 hover:bg-white/20'
-              }`}
-            >
-              <Calendar className="w-5 h-5" />
-            </button>
-            <button
-              onClick={() => scrollToSection('bangkok-guide')}
-              className={`p-2 rounded-full transition-colors ${
-                activeSection === 'bangkok-guide'
-                  ? 'bg-netcore-blue text-white'
-                  : 'text-gray-300 hover:bg-white/20'
-              }`}
-            >
-              <MapPin className="w-5 h-5" />
-            </button>
-            <button
-              onClick={() => scrollToSection('top-attractions')}
-              className={`p-2 rounded-full transition-colors ${
-                activeSection === 'top-attractions'
-                  ? 'bg-netcore-blue text-white'
-                  : 'text-gray-300 hover:bg-white/20'
-              }`}
-            >
-              <MapPin className="w-5 h-5" />
-            </button>
-            <button
-              onClick={() => scrollToSection('travel-checklist')}
-              className={`p-2 rounded-full transition-colors ${
-                activeSection === 'travel-checklist'
-                  ? 'bg-netcore-blue text-white'
-                  : 'text-gray-300 hover:bg-white/20'
-              }`}
-            >
-              <ListChecks className="w-5 h-5" />
-            </button>
-            <button
-              onClick={() => scrollToSection('code-of-conduct')}
-              className={`p-2 rounded-full transition-colors ${
-                activeSection === 'code-of-conduct'
-                  ? 'bg-netcore-blue text-white'
-                  : 'text-gray-300 hover:bg-white/20'
-              }`}
-            >
-              <Scroll className="w-5 h-5" />
-            </button>
-          </div>
-        </div>
+      <nav className="flex justify-center space-x-4 md:space-x-8">
+        <button
+          onClick={() => scrollToSection('hero')}
+          className={`px-3 py-2 rounded-lg transition-colors ${
+            activeSection === 'hero'
+              ? 'bg-netcore-blue text-white'
+              : 'text-gray-400 hover:text-white'
+          }`}
+        >
+          Home
+        </button>
+        <button
+          onClick={() => scrollToSection('agenda')}
+          className={`px-3 py-2 rounded-lg transition-colors ${
+            activeSection === 'agenda'
+              ? 'bg-netcore-blue text-white'
+              : 'text-gray-400 hover:text-white'
+          }`}
+        >
+          Agenda
+        </button>
+        <button
+          onClick={() => scrollToSection('top-attractions')}
+          className={`px-3 py-2 rounded-lg transition-colors ${
+            activeSection === 'top-attractions'
+              ? 'bg-netcore-blue text-white'
+              : 'text-gray-400 hover:text-white'
+          }`}
+        >
+          Attractions
+        </button>
+        <button
+          onClick={() => scrollToSection('travel-checklist')}
+          className={`px-3 py-2 rounded-lg transition-colors ${
+            activeSection === 'travel-checklist'
+              ? 'bg-netcore-blue text-white'
+              : 'text-gray-400 hover:text-white'
+          }`}
+        >
+          Travel Checklist
+        </button>
+        <button
+          onClick={() => scrollToSection('code-of-conduct')}
+          className={`px-3 py-2 rounded-lg transition-colors ${
+            activeSection === 'code-of-conduct'
+              ? 'bg-netcore-blue text-white'
+              : 'text-gray-400 hover:text-white'
+          }`}
+        >
+          Code of Conduct
+        </button>
       </nav>
 
       {/* Back to Top Button */}

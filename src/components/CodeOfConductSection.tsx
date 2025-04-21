@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle2, AlertCircle, Info, Phone } from 'lucide-react';
+import { CheckCircle2, AlertCircle, Info, Phone, Check, X } from 'lucide-react';
 
 const CodeOfConductSection = () => {
   return (
@@ -64,78 +64,113 @@ const CodeOfConductSection = () => {
           ))}
         </div>
 
-        {/* Quick Guide */}
+        {/* Bangkok Guide */}
         <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 md:p-8 mb-8">
-          <h3 className="text-xl md:text-2xl font-semibold text-white mb-4">Bangkok Guide</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              {
-                title: "Cultural Etiquette",
-                tips: [
-                  "Dress modestly at temples",
-                  "Remove shoes before entering temples",
-                  "Avoid touching anyone's head",
-                  "Greet with a 'wai' (prayer-like gesture)"
-                ]
-              },
-              {
-                title: "Transportation",
-                tips: [
-                  "Use Grab app for reliable rides",
-                  "Agree on tuk-tuk fare beforehand",
-                  "BTS Skytrain for quick city travel",
-                  "Keep hotel address in Thai script"
-                ]
-              },
-              {
-                title: "Food & Drinks",
-                tips: [
-                  "Stick to bottled water",
-                  "Street food is amazing but choose busy stalls",
-                  "Try local fruits but wash them well",
-                  "Inform vendors about spice preference"
-                ]
-              },
-              {
-                title: "Safety Tips",
-                tips: [
-                  "Keep belongings close in crowded areas",
-                  "Use hotel safe for valuables",
-                  "Carry hotel card with Thai address",
-                  "Stay in well-lit areas at night"
-                ]
-              },
-              {
-                title: "Communication",
-                tips: [
-                  "Check group messages regularly",
-                  "Save emergency contacts",
-                  "Download offline Google Maps",
-                  "Learn basic Thai greetings"
-                ]
-              },
-              {
-                title: "Shopping",
-                tips: [
-                  "Bargaining is expected at markets",
-                  "Keep receipts for expensive items",
-                  "Check product authenticity",
-                  "Compare prices across shops"
-                ]
-              }
-            ].map((category, index) => (
-              <div key={index} className="bg-white/5 backdrop-blur-sm rounded-xl p-4 hover:bg-white/10 transition-colors">
-                <h4 className="text-lg font-semibold text-white mb-3">{category.title}</h4>
-                <ul className="space-y-2">
-                  {category.tips.map((tip, i) => (
-                    <li key={i} className="text-gray-300 text-sm flex items-start">
-                      <span className="text-yellow-400 mr-2">•</span>
-                      <span>{tip}</span>
-                    </li>
-                  ))}
-                </ul>
+          <h3 className="text-xl md:text-2xl font-semibold text-white mb-6 text-center">
+            🌟 Your Bangkok Guide: What to Know Before You Go 🌟
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Things to Do */}
+            <div className="space-y-6">
+              <div className="flex items-center space-x-2 mb-4">
+                <Check className="w-6 h-6 text-green-400" />
+                <h4 className="text-lg font-semibold text-white">Things to Do</h4>
               </div>
-            ))}
+              <div className="space-y-4">
+                {[
+                  {
+                    title: "Cultural Respect",
+                    tips: [
+                      "Dress modestly at temples",
+                      "Remove shoes before entering temples",
+                      "Greet with a 'wai' (prayer-like gesture)",
+                      "Learn basic Thai greetings"
+                    ]
+                  },
+                  {
+                    title: "Smart Transportation",
+                    tips: [
+                      "Use Grab app for reliable rides",
+                      "Take BTS Skytrain for quick city travel",
+                      "Keep hotel address in Thai script",
+                      "Pre-negotiate tuk-tuk fares"
+                    ]
+                  },
+                  {
+                    title: "Food Safety",
+                    tips: [
+                      "Try street food from busy stalls",
+                      "Drink bottled water only",
+                      "Enjoy fresh fruits (after washing)",
+                      "Specify spice preferences clearly"
+                    ]
+                  }
+                ].map((category, index) => (
+                  <div key={index} className="bg-white/5 backdrop-blur-sm rounded-xl p-4">
+                    <h5 className="text-white font-semibold mb-2">{category.title}</h5>
+                    <ul className="space-y-2">
+                      {category.tips.map((tip, i) => (
+                        <li key={i} className="text-gray-300 text-sm flex items-start">
+                          <span className="text-green-400 mr-2">•</span>
+                          <span>{tip}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Things to Avoid */}
+            <div className="space-y-6">
+              <div className="flex items-center space-x-2 mb-4">
+                <X className="w-6 h-6 text-red-400" />
+                <h4 className="text-lg font-semibold text-white">Things to Avoid</h4>
+              </div>
+              <div className="space-y-4">
+                {[
+                  {
+                    title: "Cultural Sensitivity",
+                    tips: [
+                      "Don't touch anyone's head",
+                      "Don't point feet at people/Buddha images",
+                      "Don't disrespect royal family",
+                      "Don't wear revealing clothes at temples"
+                    ]
+                  },
+                  {
+                    title: "Safety Precautions",
+                    tips: [
+                      "Don't leave belongings unattended",
+                      "Don't walk alone in unfamiliar areas at night",
+                      "Don't carry original passport (keep copy)",
+                      "Don't accept drinks from strangers"
+                    ]
+                  },
+                  {
+                    title: "Common Mistakes",
+                    tips: [
+                      "Don't drink tap water",
+                      "Don't forget to bargain at markets",
+                      "Don't miss group meeting times",
+                      "Don't ignore weather advisories"
+                    ]
+                  }
+                ].map((category, index) => (
+                  <div key={index} className="bg-white/5 backdrop-blur-sm rounded-xl p-4">
+                    <h5 className="text-white font-semibold mb-2">{category.title}</h5>
+                    <ul className="space-y-2">
+                      {category.tips.map((tip, i) => (
+                        <li key={i} className="text-gray-300 text-sm flex items-start">
+                          <span className="text-red-400 mr-2">•</span>
+                          <span>{tip}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
 
