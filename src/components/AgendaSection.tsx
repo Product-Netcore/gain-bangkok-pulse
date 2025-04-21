@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import { useSwipeable } from 'react-swipeable';
 import { agendaData } from './agenda/agendaData';
-import { Calendar, Clock, Users, Coffee, Utensils, Award } from 'lucide-react';
+import { Calendar, Clock, Users, Coffee, Utensils, Award, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const AgendaSection = () => {
   const [activeDay, setActiveDay] = useState('day1');
@@ -29,6 +30,21 @@ const AgendaSection = () => {
     }
   }, []);
 
+  const handleSwipe = (direction: 'left' | 'right') => {
+    const currentIndex = agendaData.findIndex(day => day.id === activeDay);
+    if (direction === 'left' && currentIndex < agendaData.length - 1) {
+      setActiveDay(agendaData[currentIndex + 1].id);
+    } else if (direction === 'right' && currentIndex > 0) {
+      setActiveDay(agendaData[currentIndex - 1].id);
+    }
+  };
+
+  const swipeHandlers = useSwipeable({
+    onSwipedLeft: () => handleSwipe('left'),
+    onSwipedRight: () => handleSwipe('right'),
+    trackMouse: true
+  });
+
   const getEventIcon = (title: string) => {
     if (title.toLowerCase().includes('breakfast') || title.toLowerCase().includes('lunch') || title.toLowerCase().includes('dinner')) {
       return <Utensils className="w-5 h-5 text-netcore-blue" />;
@@ -54,24 +70,45 @@ const AgendaSection = () => {
         <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-white text-center">Conference Agenda</h2>
         
         {/* Day Selector */}
-        <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-4 md:mb-6">
-          {agendaData.map((day) => (
-            <button
-              key={day.id}
-              onClick={() => setActiveDay(day.id)}
-              className={`px-3 md:px-5 py-1.5 text-sm md:text-base rounded-lg transition-all duration-300 ${
-                activeDay === day.id
-                  ? 'bg-netcore-blue text-white shadow-lg transform scale-105'
-                  : 'bg-white/10 text-white hover:bg-white/20'
-              }`}
-            >
-              {day.title}
-            </button>
-          ))}
+        <div className="flex items-center justify-center gap-2 md:gap-3 mb-4 md:mb-6">
+          <button
+            onClick={() => handleSwipe('right')}
+            className="p-2 text-white hover:text-netcore-accent transition-colors"
+            aria-label="Previous day"
+          >
+            <ChevronLeft className="w-6 h-6" />
+          </button>
+          
+          <div className="flex flex-wrap justify-center gap-2 md:gap-3">
+            {agendaData.map((day) => (
+              <button
+                key={day.id}
+                onClick={() => setActiveDay(day.id)}
+                className={`px-3 md:px-5 py-1.5 text-sm md:text-base rounded-lg transition-all duration-300 ${
+                  activeDay === day.id
+                    ? 'bg-netcore-blue text-white shadow-lg transform scale-105'
+                    : 'bg-white/10 text-white hover:bg-white/20'
+                }`}
+              >
+                {day.title}
+              </button>
+            ))}
+          </div>
+
+          <button
+            onClick={() => handleSwipe('left')}
+            className="p-2 text-white hover:text-netcore-accent transition-colors"
+            aria-label="Next day"
+          >
+            <ChevronRight className="w-6 h-6" />
+          </button>
         </div>
 
         {/* Agenda Content */}
-        <div className="bg-white/95 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden">
+        <div 
+          className="bg-white/95 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden"
+          {...swipeHandlers}
+        >
           {agendaData.map((day) => (
             <div
               key={day.id}
