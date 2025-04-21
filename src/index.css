@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -96,6 +99,45 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-poppins;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer components {
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .animate-on-scroll.animated {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .guide-card {
+    @apply relative overflow-hidden bg-white rounded-xl shadow-md transition-all duration-300 hover:shadow-lg p-6;
+  }
+
+  .guide-card:hover {
+    @apply transform scale-[1.02];
+  }
+
+  .guide-card::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-1 bg-netcore-blue transform scale-x-0 transition-transform duration-300 origin-bottom-left;
+  }
+
+  .guide-card:hover::after {
+    @apply scale-x-100;
+  }
+
+  .checkbox-item {
+    @apply flex items-start space-x-3 mb-4;
+  }
+
+  .checkbox-item .icon {
+    @apply text-netcore-blue flex-shrink-0 mt-1;
   }
 }
