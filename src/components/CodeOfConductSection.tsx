@@ -71,105 +71,133 @@ const CodeOfConductSection = () => {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Things to Do */}
-            <div className="space-y-6">
+            <div className="space-y-4">
               <div className="flex items-center space-x-2 mb-4">
                 <Check className="w-6 h-6 text-green-400" />
                 <h4 className="text-lg font-semibold text-white">Things to Do</h4>
               </div>
-              <div className="space-y-4">
-                {[
-                  {
-                    title: "Cultural Respect",
-                    tips: [
-                      "Dress modestly at temples",
-                      "Remove shoes before entering temples",
-                      "Greet with a 'wai' (prayer-like gesture)",
-                      "Learn basic Thai greetings"
-                    ]
-                  },
-                  {
-                    title: "Smart Transportation",
-                    tips: [
-                      "Use Grab app for reliable rides",
-                      "Take BTS Skytrain for quick city travel",
-                      "Keep hotel address in Thai script",
-                      "Pre-negotiate tuk-tuk fares"
-                    ]
-                  },
-                  {
-                    title: "Food Safety",
-                    tips: [
-                      "Try street food from busy stalls",
-                      "Drink bottled water only",
-                      "Enjoy fresh fruits (after washing)",
-                      "Specify spice preferences clearly"
-                    ]
-                  }
-                ].map((category, index) => (
-                  <div key={index} className="bg-white/5 backdrop-blur-sm rounded-xl p-4">
-                    <h5 className="text-white font-semibold mb-2">{category.title}</h5>
-                    <ul className="space-y-2">
-                      {category.tips.map((tip, i) => (
-                        <li key={i} className="text-gray-300 text-sm flex items-start">
-                          <span className="text-green-400 mr-2">•</span>
-                          <span>{tip}</span>
-                        </li>
-                      ))}
-                    </ul>
+              {[
+                {
+                  icon: "🏢",
+                  title: "Represent Netcore Positively",
+                  description: "Be a proud ambassador of our brand—your actions reflect all of us."
+                },
+                {
+                  icon: "👔👗",
+                  title: "Dress Appropriately",
+                  description: "Smart casual is the way to go—look sharp, feel sharp."
+                },
+                {
+                  icon: "🙏😊",
+                  title: "Be Polite and Respectful",
+                  description: "Treat colleagues, partners, and locals with kindness and respect."
+                },
+                {
+                  icon: "⏰🪪",
+                  title: "Be Punctual and Wear Your Badge",
+                  description: "Time matters—arrive on time and always wear your ID with pride."
+                },
+                {
+                  icon: "📝📅",
+                  title: "Attend All Planned Sessions",
+                  description: "Every session counts—be present, engaged, and curious."
+                },
+                {
+                  icon: "🏨📍",
+                  title: "Carry a Hotel Card or Google Maps Pin",
+                  description: "In case of language barriers with drivers, showing the hotel info helps."
+                },
+                {
+                  icon: "🍷✔️",
+                  title: "Drink Responsibly in Designated Venues",
+                  description: "If you choose to drink, do so responsibly and only where permitted."
+                },
+                {
+                  icon: "🛏️🧹",
+                  title: "Treat Hotel Property with Care",
+                  description: "Respect your space—handle hotel property like it's your own."
+                },
+                {
+                  icon: "💧🌞",
+                  title: "Stay Hydrated and Use Sunscreen",
+                  description: "Bangkok can be humid and hot—stay cool and comfortable."
+                }
+              ].map((item, index) => (
+                <div key={index} className="bg-white/5 backdrop-blur-sm rounded-xl p-4">
+                  <div className="flex items-start space-x-3">
+                    <span className="text-2xl" role="img" aria-label={item.title}>{item.icon}</span>
+                    <div>
+                      <h5 className="text-white font-semibold mb-1">{item.title}</h5>
+                      <p className="text-gray-300 text-sm">{item.description}</p>
+                    </div>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
 
             {/* Things to Avoid */}
-            <div className="space-y-6">
+            <div className="space-y-4">
               <div className="flex items-center space-x-2 mb-4">
                 <X className="w-6 h-6 text-red-400" />
                 <h4 className="text-lg font-semibold text-white">Things to Avoid</h4>
               </div>
-              <div className="space-y-4">
-                {[
-                  {
-                    title: "Cultural Sensitivity",
-                    tips: [
-                      "Don't touch anyone's head",
-                      "Don't point feet at people/Buddha images",
-                      "Don't disrespect royal family",
-                      "Don't wear revealing clothes at temples"
-                    ]
-                  },
-                  {
-                    title: "Safety Precautions",
-                    tips: [
-                      "Don't leave belongings unattended",
-                      "Don't walk alone in unfamiliar areas at night",
-                      "Don't carry original passport (keep copy)",
-                      "Don't accept drinks from strangers"
-                    ]
-                  },
-                  {
-                    title: "Common Mistakes",
-                    tips: [
-                      "Don't drink tap water",
-                      "Don't forget to bargain at markets",
-                      "Don't miss group meeting times",
-                      "Don't ignore weather advisories"
-                    ]
-                  }
-                ].map((category, index) => (
-                  <div key={index} className="bg-white/5 backdrop-blur-sm rounded-xl p-4">
-                    <h5 className="text-white font-semibold mb-2">{category.title}</h5>
-                    <ul className="space-y-2">
-                      {category.tips.map((tip, i) => (
-                        <li key={i} className="text-gray-300 text-sm flex items-start">
-                          <span className="text-red-400 mr-2">•</span>
-                          <span>{tip}</span>
-                        </li>
-                      ))}
-                    </ul>
+              {[
+                {
+                  icon: "🛑🤐",
+                  title: "Avoid Offensive or Discriminatory Behavior",
+                  description: "Inclusion is our core—keep your words and actions considerate."
+                },
+                {
+                  icon: "🍻🚫",
+                  title: "Misconduct Due to Intoxication Won't Be Tolerated",
+                  description: "Stay in control—intoxication is never an excuse for poor behavior."
+                },
+                {
+                  icon: "🧱💸",
+                  title: "Any Damages Are the Individual Responsibility",
+                  description: "You break it, you fix it—personal accountability applies."
+                },
+                {
+                  icon: "🔇🏨",
+                  title: "Avoid Excessive Noise in Your Hotel",
+                  description: "Keep it down—let's be good neighbors to fellow guests."
+                },
+                {
+                  icon: "🚯🚭",
+                  title: "Don't Litter or Smoke in Restricted Areas",
+                  description: "Fines can be steep. Look for designated areas."
+                },
+                {
+                  icon: "📵📲",
+                  title: "Avoid Negative Social Posts",
+                  description: "Share the good vibes—skip posts that reflect poorly on anyone."
+                },
+                {
+                  icon: "🤐🔐",
+                  title: "Don't Share Confidential Info with Strangers",
+                  description: "Keep it tight—confidential info stays within trusted circles."
+                },
+                {
+                  icon: "😡❌",
+                  title: "Don't Raise Your Voice or Lose Temper in Public",
+                  description: "Losing face is frowned upon—calm communication is preferred."
+                },
+                {
+                  icon: "🏷️💬",
+                  title: "Use Event Hashtags Responsibly",
+                  description: "Post smart—represent the brand well with every hashtag."
+                }
+              ].map((item, index) => (
+                <div key={index} className="bg-white/5 backdrop-blur-sm rounded-xl p-4">
+                  <div className="flex items-start space-x-3">
+                    <span className="text-2xl" role="img" aria-label={item.title}>{item.icon}</span>
+                    <div>
+                      <h5 className="text-white font-semibold mb-1">{item.title}</h5>
+                      <p className="text-gray-300 text-sm">{item.description}</p>
+                    </div>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
