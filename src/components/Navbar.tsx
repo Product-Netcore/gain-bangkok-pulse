@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
-  
+
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 10;
@@ -38,11 +38,11 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            {/* GAIN Logo */}
+            {/* Netcore Logo */}
             <div className="h-10 mr-2 flex items-center">
               <img
-                src="/lovable-uploads/24ad330a-25fb-4e27-93bc-fbe3e8e58501.png"
-                alt="GAIN Logo"
+                src="/lovable-uploads/3d5638c8-2742-44b1-b38f-1ba035ff42d8.png"
+                alt="Netcore Logo"
                 className="h-10 w-auto object-contain"
                 style={{ 
                   maxHeight: 40,
@@ -54,7 +54,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          
+
           <nav className="hidden md:flex items-center space-x-1">
             <Button 
               variant="ghost" 
@@ -107,7 +107,7 @@ const Navbar = () => {
               Code of Conduct
             </Button>
           </nav>
-          
+
           {/* Mobile menu button */}
           <div className="md:hidden">
             <Button 

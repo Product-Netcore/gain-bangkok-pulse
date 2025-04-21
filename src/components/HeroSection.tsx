@@ -30,7 +30,7 @@ const HeroSection = () => {
             'radial-gradient(ellipse at 60% 40%, rgba(234,172,232,0.12) 0%, rgba(20,63,147,0.21) 52%, transparent 100%)'
         }}
       />
-      {/* Dramatic Large GAIN logo as subtle background, but sharper for visual pop */}
+      {/* Dramatic Large GAIN background logo with glow effect */}
       <img
         src="/lovable-uploads/24ad330a-25fb-4e27-93bc-fbe3e8e58501.png"
         alt=""
@@ -44,7 +44,7 @@ const HeroSection = () => {
       />
 
       <div className="container mx-auto px-4 relative z-10 flex flex-col items-center">
-        {/* Centered LOGO with glow */}
+        {/* Centered GAIN image with glow */}
         <div className="mb-8 flex justify-center animate-fade-in" style={{ animationDelay: '0.05s' }}>
           <div
             className="rounded-2xl shadow-2xl overflow-hidden bg-white/0 p-1 border border-[#ff719a80]"
@@ -62,12 +62,7 @@ const HeroSection = () => {
             />
           </div>
         </div>
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white animate-fade-in" style={{ animationDelay: '0.15s', letterSpacing: '-1px' }}>
-          Netcore Sales Conference 2025
-        </h1>
-        <h2 className="text-xl md:text-2xl font-medium text-[#FFB55F] mb-10 animate-fade-in" style={{ animationDelay: '0.22s' }}>
-          Fueling Growth. Forging Connections. <span className="text-base block text-neutral-300 mt-2">The Futuristic Event of the Year.</span>
-        </h2>
+        {/* Removed all text overlays as requested */}
         <div className="mb-10 animate-fade-in" style={{ animationDelay: '0.3s' }}>
           <CountdownTimer />
         </div>
