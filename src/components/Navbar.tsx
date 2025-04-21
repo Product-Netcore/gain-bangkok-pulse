@@ -39,8 +39,14 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             {/* Netcore Logo */}
-            <div className="h-10 mr-2">
-              <div className="text-netcore-blue font-bold text-xl">
+            <div className="h-10 mr-2 flex items-center">
+              <img
+                src="/lovable-uploads/1d53dffe-e733-4b42-933f-8b53d313245e.png"
+                alt="Netcore Logo"
+                className="h-10 w-10 object-contain"
+                style={{ maxWidth: 40, maxHeight: 40 }}
+              />
+              <div className="text-netcore-blue font-bold text-xl ml-2">
                 <span className="text-netcore-blue">NETCORE</span>
               </div>
             </div>

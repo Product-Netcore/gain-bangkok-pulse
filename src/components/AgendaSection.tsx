@@ -13,19 +13,49 @@ const AgendaSection = () => {
       title: "Day 1",
       events: [
         {
-          time: "Throughout the day",
-          title: "Group Airport Pick-ups",
-          description: "Arranged post arrival at Suvarnabhumi International Airport"
+          time: "08:00 AM - 12:00 PM",
+          title: "Arrival at the Venue – Breakfast for early Arrivals",
+          description: "(No rooms availability till 3PM)"
         },
         {
-          time: "12:00 PM - 4:00 PM",
-          title: "Hotel Check-in",
-          description: "Conference venue hotel"
+          time: "01:00 PM – 3:00 PM",
+          title: "🍽️ Power Lunch",
+          description: ""
         },
         {
-          time: "7:00 PM - 10:00 PM",
-          title: "Welcome Dinner & Team Bonding",
-          description: "Networking event with fun activities"
+          time: "03:00 PM - 04:00 PM",
+          title: "Check In / Leisure",
+          description: ""
+        },
+        {
+          time: "04:00 PM - 04:10 PM",
+          title: "Assemble in Ballroom for Netcore Anthem",
+          description: ""
+        },
+        {
+          time: "04:10 PM – 04:20 PM",
+          title: "🚀 GAINing Momentum: Welcome Address by Amit & Abithab",
+          description: ""
+        },
+        {
+          time: "04:25 PM – 04:55 PM",
+          title: "🌟 Visionary GAIN: Rajesh Jain’s Keynote Address",
+          description: ""
+        },
+        {
+          time: "05:00 PM - 07:00 PM",
+          title: "Event Kickoff with Team building Activity",
+          description: "(External Team will drive the next few hours)"
+        },
+        {
+          time: "07:00 PM Onwards",
+          title: "Dinner & Leisure",
+          description: ""
+        },
+        {
+          time: "",
+          title: "Note",
+          description: "Group Pick up shall be provided from the Airport Post Airport Check out. For Individuals, they can book their transfers from Airport & will be re-imbursed accordingly"
         }
       ]
     },
@@ -35,29 +65,99 @@ const AgendaSection = () => {
       title: "Day 2",
       events: [
         {
-          time: "9:00 AM - 10:30 AM",
-          title: "Opening Keynote: Strategy & Vision",
-          description: "Keynote by CEO and leadership team"
+          time: "07:30 AM - 09:20 AM",
+          title: "Breakfast",
+          description: ""
         },
         {
-          time: "10:45 AM - 12:30 PM",
-          title: "Go-to-Market Sessions",
-          description: "Breakout sessions by region"
+          time: "09:00 AM – 09:10 AM",
+          title: "🚀 Booting Up: Welcome to GAIN Mode",
+          description: ""
         },
         {
-          time: "12:30 PM - 2:00 PM",
-          title: "Networking Lunch",
-          description: "Regional teams dine together"
+          time: "09:15 AM – 09:25 AM",
+          title: "🎬 Fueling the Mind: AI-Spirational Kickoff",
+          description: ""
         },
         {
-          time: "2:00 PM - 5:00 PM",
-          title: "Strategy Workshops",
-          description: "Interactive team sessions"
+          time: "09:30 AM – 09:55 AM",
+          title: "📈 Past. Present. GAIN. – A CEO’s Viewpoint – KJ",
+          description: ""
         },
         {
-          time: "7:00 PM - 11:00 PM",
-          title: "Awards Night & Gala Dinner",
-          description: "Celebration of achievements"
+          time: "10:00 AM – 10:25 AM",
+          title: "🚀 Activating GAIN Mode: Vision 2025 - Abithab",
+          description: ""
+        },
+        {
+          time: "10:30 AM – 10:55 AM",
+          title: "💰 Scaling Smart: Revenue in the Age of AI - Amit",
+          description: ""
+        },
+        {
+          time: "11:00 AM – 11:10 AM",
+          title: "☕ GAIN a Sip: Tea & Chatter Break",
+          description: ""
+        },
+        {
+          time: "11:15 AM – 11:40 AM",
+          title: "🔥 Recharge. Rethink. Rise – Diana",
+          description: ""
+        },
+        {
+          time: "11:45 AM – 12:25 PM",
+          title: "🦸‍♂️ Sales Avengers: Powering the Pipeline",
+          description: ""
+        },
+        {
+          time: "12:30 PM – 12:55 PM",
+          title: "🎉 AI or Nay? The GAIN Game Begins with Girish & Balajee",
+          description: ""
+        },
+        {
+          time: "01:00 PM – 01:55 PM",
+          title: "🍽️ System Cooldown: Refuel & Refresh",
+          description: ""
+        },
+        {
+          time: "02:00 PM – 02:40 PM",
+          title: "🦸‍♂️ Sales Avengers: Powering the Pipeline",
+          description: ""
+        },
+        {
+          time: "02:45 PM - 03:10 PM",
+          title: "💡GAIN Starts with You – Mr. Jaimit Doshi",
+          description: ""
+        },
+        {
+          time: "03:15 PM – 03:40 PM",
+          title: "🔬 Product Deep Dive - GAIN Tech Stack - Kedar & Saurabh",
+          description: ""
+        },
+        {
+          time: "03:45 PM - 03:55 PM",
+          title: "☕ GAIN a Sip: Tea & Chatter Break",
+          description: ""
+        },
+        {
+          time: "04:00 PM - 04:25 PM",
+          title: "⚡ Firestorm with Praveen & AV",
+          description: ""
+        },
+        {
+          time: "04:30 PM - 04:55 PM",
+          title: "🎤 Mastering the Shift: From Growth to GAIN – Sid",
+          description: ""
+        },
+        {
+          time: "05:00 PM – 05:15 PM",
+          title: "🎤 System Shutdown: Sync, Reflect & GAIN More - Amit / AB",
+          description: ""
+        },
+        {
+          time: "07:45 PM - 11:00 PM",
+          title: "🏆 GAINing Glory: Awards Nite & Gala Dinner",
+          description: ""
         }
       ]
     },
@@ -67,14 +167,14 @@ const AgendaSection = () => {
       title: "Day 3",
       events: [
         {
-          time: "9:00 AM - 12:00 PM",
-          title: "Free Morning for Leader Side-Meetings",
-          description: "Optional meetings or free time to explore Bangkok"
+          time: "07:30 AM - 10:00 AM",
+          title: "Breakfast in Hotel",
+          description: ""
         },
         {
-          time: "Throughout the day",
-          title: "Return Airport Transfers",
-          description: "Dynamic group-wise timing based on flight schedules"
+          time: "10:00 AM",
+          title: "Check out (Baggage to be kept in Baggage area)",
+          description: ""
         }
       ]
     }
@@ -119,7 +219,7 @@ const AgendaSection = () => {
                     <div 
                       key={eventIndex}
                       className="p-6 animate-on-scroll"
-                      style={{ animationDelay: `${eventIndex * 0.1}s` }}
+                      style={{ animationDelay: `${eventIndex * 0.07}s` }}
                     >
                       <div className="flex flex-col md:flex-row md:items-start">
                         <div className="md:w-1/3 font-medium text-gray-500 mb-2 md:mb-0">
@@ -129,9 +229,11 @@ const AgendaSection = () => {
                           <h4 className="text-lg font-semibold text-netcore-blue mb-1">
                             {event.title}
                           </h4>
-                          <p className="text-gray-600">
-                            {event.description}
-                          </p>
+                          {event.description && (
+                            <p className="text-gray-600">
+                              {event.description}
+                            </p>
+                          )}
                         </div>
                       </div>
                     </div>
