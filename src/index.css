@@ -105,6 +105,24 @@
   }
 }
 
+@keyframes backgroundGlow {
+  0% {
+    filter: blur(2px) brightness(1) saturate(1.1);
+    opacity: 1;
+  }
+  50% {
+    filter: blur(2.5px) brightness(1.04) saturate(1.16);
+    opacity: 0.87;
+  }
+  100% {
+    filter: blur(2px) brightness(1) saturate(1.1);
+    opacity: 1;
+  }
+}
+.animate-background-glow {
+  animation: backgroundGlow 8s ease-in-out infinite alternate;
+}
+
 @layer components {
   .animate-on-scroll {
     opacity: 0;

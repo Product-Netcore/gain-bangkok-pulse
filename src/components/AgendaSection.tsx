@@ -55,7 +55,8 @@ const AgendaSection = () => {
         {
           time: "",
           title: "Note",
-          description: "Group Pick up shall be provided from the Airport Post Airport Check out. For Individuals, they can book their transfers from Airport & will be re-imbursed accordingly"
+          description:
+            "Group Pick up shall be provided from the Airport Post Airport Check out. For Individuals, they can book their transfers from Airport & will be re-imbursed accordingly"
         }
       ]
     },
@@ -181,17 +182,17 @@ const AgendaSection = () => {
   ];
 
   return (
-    <section id="agenda" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+    <section id="agenda" className="py-20 relative z-[3]">
+      <div className="absolute inset-0 pointer-events-none bg-gradient-to-br from-white/90 via-white/85 to-[#e6e6f3ee] -z-10 rounded-2xl shadow-xl border border-white/80 mx-2" />
+      <div className="container mx-auto px-4 max-w-4xl">
         <h2 className="text-3xl md:text-4xl font-bold text-netcore-blue text-center mb-12 animate-on-scroll">
           Conference Agenda
         </h2>
-        
-        <Tabs defaultValue="day1" value={activeDay} onValueChange={setActiveDay} className="w-full max-w-4xl mx-auto">
+        <Tabs defaultValue="day1" value={activeDay} onValueChange={setActiveDay} className="w-full max-w-3xl mx-auto">
           <TabsList className="grid w-full grid-cols-3 mb-8">
             {days.map((day) => (
-              <TabsTrigger 
-                key={day.id} 
+              <TabsTrigger
+                key={day.id}
                 value={day.id}
                 className={cn(
                   "data-[state=active]:bg-netcore-blue data-[state=active]:text-white",
@@ -202,21 +203,19 @@ const AgendaSection = () => {
               </TabsTrigger>
             ))}
           </TabsList>
-          
           {days.map((day, dayIndex) => (
-            <TabsContent 
-              key={day.id} 
+            <TabsContent
+              key={day.id}
               value={day.id}
               className="animate-fade-in"
             >
-              <div className="rounded-lg overflow-hidden border border-gray-100 shadow-md">
+              <div className="rounded-lg overflow-hidden border border-gray-100 shadow-md bg-white/90 backdrop-blur-sm">
                 <div className="bg-netcore-lightGray py-4 px-6">
                   <h3 className="text-xl font-semibold text-netcore-blue">{day.date}</h3>
                 </div>
-                
                 <div className="divide-y divide-gray-100">
                   {day.events.map((event, eventIndex) => (
-                    <div 
+                    <div
                       key={eventIndex}
                       className="p-6 animate-on-scroll"
                       style={{ animationDelay: `${eventIndex * 0.07}s` }}
@@ -249,3 +248,4 @@ const AgendaSection = () => {
 };
 
 export default AgendaSection;
+
