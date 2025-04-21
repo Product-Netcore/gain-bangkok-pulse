@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
@@ -88,7 +87,7 @@ const Navbar = () => {
             </Button>
             <Button 
               variant="ghost" 
-              onClick={() => scrollToSection('checklist')}
+              onClick={() => scrollToSection('travel-checklist')}
               className={cn(
                 "text-sm font-medium",
                 scrolled ? "text-netcore-blue hover:text-netcore-darkBlue" : "text-white hover:text-netcore-lightGray"

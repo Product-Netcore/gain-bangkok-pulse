@@ -65,7 +65,7 @@ const CodeOfConductSection = () => {
         </div>
 
         {/* Bangkok Guide */}
-        <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 md:p-8 mb-8">
+        <div id="guide" className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 md:p-8 mb-8">
           <h3 className="text-xl md:text-2xl font-semibold text-white mb-6 text-center">
             🌟 Your Bangkok Guide: What to Know Before You Go 🌟
           </h3>
