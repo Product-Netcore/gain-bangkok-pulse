@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
@@ -13,9 +12,7 @@ import { setupAnimationObserver } from '@/utils/animationObserver';
 const Index = () => {
   useEffect(() => {
     const observer = setupAnimationObserver();
-    
     return () => {
-      // Clean up the observer when the component unmounts
       if (observer) {
         observer.disconnect();
       }
@@ -23,7 +20,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-[#181426]">
       <Navbar />
       <HeroSection />
       <AgendaSection />
