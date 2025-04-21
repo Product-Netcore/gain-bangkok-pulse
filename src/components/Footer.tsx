@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Footer = () => {
@@ -43,6 +42,20 @@ const Footer = () => {
               </svg>
             </a>
           </div>
+        </div>
+        
+        <div className="mt-4 text-center text-sm text-gray-400">
+          <p>
+            Designed with ❤️ by{' '}
+            <a 
+              href="https://udayandaschowdhury.netlify.app/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-netcore-accent hover:text-white transition-colors"
+            >
+              Udayan Das Chowdhury
+            </a>
+          </p>
         </div>
       </div>
     </footer>
