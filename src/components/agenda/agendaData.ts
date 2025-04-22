@@ -152,9 +152,9 @@ export const agendaData: DayType[] = [
       },
       {
         time: "05:10 PM – 05:35 PM",
-        title: "Netcore Cloud's Vision for 2025",
-        description: "Join our CEO, Kalpit Jain, as he unveils Netcore Cloud's strategic vision for 2025, outlining our ambitious goals and the path forward in revolutionizing customer engagement and experience.",
-        speaker: "Kalpit Jain, CEO, Netcore Cloud"
+        title: "Building Great Customer Relationships: A 'Consultative' Sales Approach",
+        description: "Learn about the art of consultative selling and how to build lasting customer relationships.",
+        speaker: "Siddharth Gopalkrishnan"
       },
       {
         time: "05:40 PM – 05:50 PM",
