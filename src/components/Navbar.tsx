@@ -87,7 +87,7 @@ const Navbar = () => {
             </Button>
             <Button 
               variant="ghost" 
-              onClick={() => scrollToSection('travel-checklist')}
+              onClick={() => scrollToSection('checklist')}
               className={cn(
                 "text-sm font-medium flex items-center space-x-1",
                 scrolled ? "text-netcore-blue hover:text-netcore-darkBlue" : "text-white hover:text-netcore-lightGray"
