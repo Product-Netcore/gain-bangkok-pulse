@@ -123,22 +123,22 @@ const AgendaSection = () => {
                     key={index} 
                     className="p-3 md:p-4 hover:bg-white/80 transition-colors duration-300"
                   >
-                    <div className="flex flex-col space-y-1.5 md:space-y-0 md:flex-row md:items-start">
-                      <div className="flex items-center space-x-2 w-full md:w-1/4">
-                        <Clock className="w-4 h-4 text-gray-400" />
-                        <span className="font-medium text-gray-500 text-sm md:text-base">
+                    <div className="flex flex-col space-y-1.5 md:space-y-0 md:flex-row md:items-center">
+                      <div className="flex items-center space-x-2 w-full md:w-1/4 min-w-[200px]">
+                        <Clock className="w-4 h-4 text-gray-400 flex-shrink-0" />
+                        <span className="font-medium text-gray-500 text-sm md:text-base whitespace-nowrap">
                           {event.time}
                         </span>
                       </div>
                       <div className="w-full md:w-3/4">
-                        <div className="flex items-start space-x-2">
+                        <div className="flex items-center space-x-2">
                           {getEventIcon(event.title)}
-                          <div>
-                            <h4 className="text-base md:text-lg font-semibold mb-0.5 text-netcore-blue">
+                          <div className="flex-grow">
+                            <h4 className="text-base md:text-lg font-semibold text-netcore-blue">
                               {event.title}
                             </h4>
                             {event.description && (
-                              <p className="text-sm md:text-base text-gray-600">
+                              <p className="text-sm md:text-base text-gray-600 mt-1">
                                 {event.description}
                               </p>
                             )}
