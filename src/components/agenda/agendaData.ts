@@ -1,4 +1,11 @@
-import { DayType } from "./DayTab";
+import { DayType } from './DayTab';
+
+export type AgendaEventType = {
+  time: string;
+  title: string;
+  description: string;
+  speaker?: string;
+};
 
 export const agendaData: DayType[] = [
   {
@@ -145,8 +152,9 @@ export const agendaData: DayType[] = [
       },
       {
         time: "05:10 PM – 05:35 PM",
-        title: "🤝 Consultative Sales",
-        description: "Siddharth Gopalkrishnan"
+        title: "Netcore Cloud's Vision for 2025",
+        description: "Join our CEO, Kalpit Jain, as he unveils Netcore Cloud's strategic vision for 2025, outlining our ambitious goals and the path forward in revolutionizing customer engagement and experience.",
+        speaker: "Kalpit Jain, CEO, Netcore Cloud"
       },
       {
         time: "05:40 PM – 05:50 PM",

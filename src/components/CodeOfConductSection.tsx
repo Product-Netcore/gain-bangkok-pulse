@@ -3,7 +3,7 @@ import { CheckCircle2, AlertCircle, Info, Phone, Check, X } from 'lucide-react';
 
 const CodeOfConductSection = () => {
   return (
-    <section id="conduct" className="py-16 md:py-24 bg-[#181426]">
+    <section id="conduct" className="py-12 md:py-16 bg-[#181426]">
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Header */}
         <div className="text-center mb-12">

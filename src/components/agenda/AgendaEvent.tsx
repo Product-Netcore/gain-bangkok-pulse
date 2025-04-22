@@ -4,6 +4,7 @@ export type AgendaEventType = {
   time: string;
   title: string;
   description: string;
+  speaker?: string;
 };
 
 const AgendaEvent = ({ event, index }: { event: AgendaEventType; index: number }) => {
@@ -24,6 +25,11 @@ const AgendaEvent = ({ event, index }: { event: AgendaEventType; index: number }
               <h4 className="text-base md:text-lg font-semibold mb-0.5 text-netcore-blue">
                 {event.title}
               </h4>
+              {event.speaker && (
+                <p className="text-sm text-gray-600 italic">
+                  Speaker: {event.speaker}
+                </p>
+              )}
               {event.description && (
                 <p className="text-sm md:text-base text-gray-600">
                   {event.description}
