@@ -35,15 +35,13 @@ export const agendaData: DayType[] = [
       },
       {
         time: "04:15 PM – 04:55 PM",
-        title: "Curtain Raiser",
-        description: "",
-        speaker: "Kalpit Jain"
+        title: "Curtain Raiser – Kalpit Jain",
+        description: ""
       },
       {
         time: "05:00 PM – 05:25 PM",
-        title: "Keynote Address",
-        description: "",
-        speaker: "Rajesh Jain"
+        title: "Keynote Address – Rajesh Jain",
+        description: ""
       },
       {
         time: "05:30 PM – 07:30 PM",
@@ -64,120 +62,107 @@ export const agendaData: DayType[] = [
     events: [
       {
         time: "07:30 AM – 08:55 AM",
-        title: "🍞 Breakfast",
+        title: "Breakfast",
         description: ""
       },
       {
         time: "09:00 AM – 09:10 AM",
-        title: "🚀 Welcome to GAIN Mode",
-        description: "",
-        speaker: "Abithab Bhaskar & Amit Ahuja"
+        title: "Welcome to GAIN Mode – Abithab Bhaskar & Amit Ahuja",
+        description: ""
       },
       {
         time: "09:15 AM – 09:25 AM",
-        title: "🎬 AI-Spirational Kickoff",
+        title: "AI-Spirational Kickoff",
         description: ""
       },
       {
         time: "09:30 AM – 10:10 AM",
-        title: "📈 GAIN",
-        description: "",
-        speaker: "Kalpit Jain"
+        title: "GAIN – Kalpit Jain",
+        description: ""
       },
       {
         time: "10:15 AM – 10:40 AM",
-        title: "🌍 Transforming International Business",
-        description: "",
-        speaker: "Abithab Bhaskar"
+        title: "Transforming International Business – Abithab Bhaskar",
+        description: ""
       },
       {
         time: "10:45 AM – 11:10 AM",
-        title: "🧠 Growth, Grit & Gameplan: India",
-        description: "",
-        speaker: "Amit Ahuja"
+        title: "Growth, Grit & Gameplan: India – Amit Ahuja",
+        description: ""
       },
       {
         time: "11:15 AM – 11:25 AM",
-        title: "☕ Coffee & Chatter Break",
+        title: "Coffee & Chatter Break",
         description: ""
       },
       {
         time: "11:30 AM – 11:55 AM",
-        title: "🎤 Guest Speaker",
-        description: "",
-        speaker: "Randi Chiah"
+        title: "Guest Speaker – Randi Chiah",
+        description: ""
       },
       {
         time: "12:00 PM – 12:35 PM",
-        title: "🦸‍♂️ Impact Player Session – Part 1",
+        title: "Impact Player Session – Part 1",
         description: ""
       },
       {
         time: "12:40 PM – 01:00 PM",
-        title: "📨 Inbox Unplugged with the Email Chief",
-        description: "",
-        speaker: "Balajee S"
+        title: "Inbox Unplugged with the Email Chief – Balajee S",
+        description: ""
       },
       {
         time: "01:05 PM – 01:55 PM",
-        title: "🍽️ System Cooldown – Refuel & Refresh",
+        title: "System Cooldown – Refuel & Refresh",
         description: ""
       },
       {
         time: "02:00 PM – 02:40 PM",
-        title: "🦸‍♂️ Impact Player Session – Part 2",
+        title: "Impact Player Session – Part 2",
         description: ""
       },
       {
         time: "02:45 PM – 03:10 PM",
-        title: "🎤 Guest Speaker",
-        description: "",
-        speaker: "Mr. Jaimit Doshi"
+        title: "Guest Speaker – Mr. Jaimit Doshi",
+        description: ""
       },
       {
         time: "03:15 PM – 03:35 PM",
-        title: "📲 Comm Stack Crackdown",
-        description: "",
-        speaker: "Girish Chaturvedi"
+        title: "Comm Stack Crackdown – Girish Chaturvedi",
+        description: ""
       },
       {
         time: "03:40 PM – 04:00 PM",
-        title: "🎯 Mission: Growth Possible",
-        description: "",
-        speaker: "Avadhoot Revankar"
+        title: "Mission: Growth Possible – Avadhoot Revankar",
+        description: ""
       },
       {
         time: "04:00 PM – 04:10 PM",
-        title: "☕ Coffee & Chatter Break",
+        title: "Coffee & Chatter Break",
         description: ""
       },
       {
         time: "04:15 PM – 04:40 PM",
-        title: "🔬 Product Deep Dive",
-        description: "",
-        speaker: "Kedar Parikh & Saurabh Tuteja"
+        title: "Product Deep Dive – Kedar Parikh & Saurabh Tuteja",
+        description: ""
       },
       {
         time: "04:45 PM – 05:05 PM",
-        title: "⏱️ Delivering Experience & Advocacy",
-        description: "",
-        speaker: "Praveen Sridhar"
+        title: "Delivering Experience & Advocacy – Praveen Sridhar",
+        description: ""
       },
       {
         time: "05:10 PM – 05:35 PM",
-        title: "🤝 Consultative Sales",
-        description: "",
-        speaker: "Siddharth Gopalkrishnan"
+        title: "Building Great Customer Relationships: A 'Consultative' Sales Approach – Siddharth Gopalkrishnan",
+        description: ""
       },
       {
         time: "05:40 PM – 05:50 PM",
-        title: "🎤 Reflection of the Day",
-        description: "",
-        speaker: "Amit Ahuja & Abithab Bhaskar"
+        title: "Reflection of the Day – Amit Ahuja & Abithab Bhaskar",
+        description: ""
       },
       {
         time: "07:45 PM – 11:00 PM",
-        title: "🏆 GAINing Glory: Awards Night & Gala Dinner",
+        title: "GAINing Glory: Awards Night & Gala Dinner",
         description: ""
       }
     ]
