@@ -35,13 +35,15 @@ export const agendaData: DayType[] = [
       },
       {
         time: "04:15 PM – 04:55 PM",
-        title: "Curtain Raiser – Kalpit Jain",
-        description: ""
+        title: "Curtain Raiser",
+        description: "",
+        speaker: "Kalpit Jain"
       },
       {
         time: "05:00 PM – 05:25 PM",
-        title: "Keynote Address – Rajesh Jain",
-        description: ""
+        title: "Keynote Address",
+        description: "",
+        speaker: "Rajesh Jain"
       },
       {
         time: "05:30 PM – 07:30 PM",
@@ -68,7 +70,8 @@ export const agendaData: DayType[] = [
       {
         time: "09:00 AM – 09:10 AM",
         title: "🚀 Welcome to GAIN Mode",
-        description: "Abithab Bhaskar & Amit Ahuja"
+        description: "",
+        speaker: "Abithab Bhaskar & Amit Ahuja"
       },
       {
         time: "09:15 AM – 09:25 AM",
@@ -78,17 +81,20 @@ export const agendaData: DayType[] = [
       {
         time: "09:30 AM – 10:10 AM",
         title: "📈 GAIN",
-        description: "Kalpit Jain"
+        description: "",
+        speaker: "Kalpit Jain"
       },
       {
         time: "10:15 AM – 10:40 AM",
         title: "🌍 Transforming International Business",
-        description: "Abithab Bhaskar"
+        description: "",
+        speaker: "Abithab Bhaskar"
       },
       {
         time: "10:45 AM – 11:10 AM",
         title: "🧠 Growth, Grit & Gameplan: India",
-        description: "Amit Ahuja"
+        description: "",
+        speaker: "Amit Ahuja"
       },
       {
         time: "11:15 AM – 11:25 AM",
@@ -98,7 +104,8 @@ export const agendaData: DayType[] = [
       {
         time: "11:30 AM – 11:55 AM",
         title: "🎤 Guest Speaker",
-        description: "Randi Chiah"
+        description: "",
+        speaker: "Randi Chiah"
       },
       {
         time: "12:00 PM – 12:35 PM",
@@ -108,7 +115,8 @@ export const agendaData: DayType[] = [
       {
         time: "12:40 PM – 01:00 PM",
         title: "📨 Inbox Unplugged with the Email Chief",
-        description: "Balajee S"
+        description: "",
+        speaker: "Balajee S"
       },
       {
         time: "01:05 PM – 01:55 PM",
@@ -123,17 +131,20 @@ export const agendaData: DayType[] = [
       {
         time: "02:45 PM – 03:10 PM",
         title: "🎤 Guest Speaker",
-        description: "Mr. Jaimit Doshi"
+        description: "",
+        speaker: "Mr. Jaimit Doshi"
       },
       {
         time: "03:15 PM – 03:35 PM",
         title: "📲 Comm Stack Crackdown",
-        description: "Girish Chaturvedi"
+        description: "",
+        speaker: "Girish Chaturvedi"
       },
       {
         time: "03:40 PM – 04:00 PM",
         title: "🎯 Mission: Growth Possible",
-        description: "Avadhoot Revankar"
+        description: "",
+        speaker: "Avadhoot Revankar"
       },
       {
         time: "04:00 PM – 04:10 PM",
@@ -143,23 +154,26 @@ export const agendaData: DayType[] = [
       {
         time: "04:15 PM – 04:40 PM",
         title: "🔬 Product Deep Dive",
-        description: "Kedar Parikh & Saurabh Tuteja"
+        description: "",
+        speaker: "Kedar Parikh & Saurabh Tuteja"
       },
       {
         time: "04:45 PM – 05:05 PM",
         title: "⏱️ Delivering Experience & Advocacy",
-        description: "Praveen Sridhar"
+        description: "",
+        speaker: "Praveen Sridhar"
       },
       {
         time: "05:10 PM – 05:35 PM",
-        title: "Building Great Customer Relationships: A 'Consultative' Sales Approach",
-        description: "Learn about the art of consultative selling and how to build lasting customer relationships.",
+        title: "🤝 Consultative Sales",
+        description: "",
         speaker: "Siddharth Gopalkrishnan"
       },
       {
         time: "05:40 PM – 05:50 PM",
         title: "🎤 Reflection of the Day",
-        description: "Amit Ahuja & Abithab Bhaskar"
+        description: "",
+        speaker: "Amit Ahuja & Abithab Bhaskar"
       },
       {
         time: "07:45 PM – 11:00 PM",
