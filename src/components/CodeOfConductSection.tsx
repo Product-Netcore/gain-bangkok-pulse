@@ -5,22 +5,14 @@ const CodeOfConductSection = () => {
   return (
     <section id="conduct" className="py-8 md:py-12 bg-[#181426]">
       <div className="container mx-auto px-4 max-w-7xl">
-        {/* Header with Travel Checklist Link */}
-        <div className="flex justify-between items-center mb-8">
-          <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Our Code of Conduct
-            </h2>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              "This isn't just a trip. It's a reflection of who we are. Let's make it safe, professional, and unforgettable — together."
-            </p>
-          </div>
-          <a 
-            href="#checklist" 
-            className="text-netcore-blue hover:text-netcore-blue/80 transition-colors duration-200 text-lg font-semibold underline decoration-2 underline-offset-4"
-          >
-            🧳 Travel Checklist
-          </a>
+        {/* Header */}
+        <div className="text-center mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            Our Code of Conduct
+          </h2>
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            "This isn't just a trip. It's a reflection of who we are. Let's make it safe, professional, and unforgettable — together."
+          </p>
         </div>
 
         {/* Core Purpose */}
